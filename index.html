@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encryptor</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="https://www.aluracursos.com/"><img src="./images/Logo.png" alt="Logo"></a>
+    </header>
+    <main>
+        <section class="section1">
+            <textarea name="textarea1" name="textarea1" id="textarea1" cols="30" rows="10"
+                placeholder="Ingrese su texto aquí"></textarea>
+                <p class="info"><img src="images/exclamation.png" alt="logoexclamacion"> Solo letras minúsculas y sin acentos
+                </p>
+            <div class="leftbuttons">
+                <button type="button" class="encrypt action-button">Encrypt</button>
+                <span class="button-space"></span>
+                <button type="button" class="decrypt action-button">Decrypt</button>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="container">
+                <div class="textoncriptado">
+                    <img class="muneco" src="./images/Muñeco.png" alt="muneco">
+                </div>
+                <div class="Parrafo">
+                    <h3>Ningún mensaje fue<br>encontrado</h3>
+                    <p>Ingrese el texto que desee encriptar o<br>desencriptar</p>
+                </div>
+            </div>
+            <div class="textarea2">
+                <textarea name="textarea2" id="textarea2" cols="30" rows="10"></textarea>
+            </div>
+            <div class="Rightbuttons">
+                <button name="copy" id="copy" type="button" class="copy action-button">Copy</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Copyright &copy; 2024 Felipe Juarez</h3>
+            <!-- Agrega las imágenes después del texto -->
+            <a href="https://github.com/FelipeJuarez955"><img src="./images/github.png" alt="github"></a>
+            <a href="https://www.linkedin.com/in/felipedejesusjuareztorres/"><img src="./images/LinkedIn.png"
+                    alt="linkedin"></a>
+        </div>
+    </footer>
+    <script>
+        var btnEncrypt = document.querySelector(".encrypt");
+        btnEncrypt.addEventListener("click", encrypt);
+
+        var btnDecrypt = document.querySelector(".decrypt");
+        btnDecrypt.addEventListener("click", decrypt);
+
+        var btnCopy = document.querySelector(".copy");
+        btnCopy.addEventListener("click", copy);
+    </script>
+</body>
+</html>
